@@ -17,13 +17,13 @@ Intermediate goals:
 -C++ implementation (I do struggle with build systems so this will be quite a jump)
 
 Future goals:
--steamVR support
--Windows support (will likely require contributors, so could be moved down in list)
--Ability to use visual trackers like in AprilTag-Trackers
--Ability to recieve input from slimevr trackers to sort of work with them to get their benefits (which are much higher sample rate than any camera could do) while preventing drift
--More # cameras in order to cover a sort of whole-room setup
--Support for IP and other camera inputs
--More advanced smoothing and motion prediction that allows levaraging the advantages and weaknesses of multiple types of cameras:  
+ - steamVR support
+ - Windows support (will likely require contributors, so could be moved down in list)
+ - Ability to use visual trackers like in AprilTag-Trackers
+ - Ability to recieve input from slimevr trackers to sort of work with them to get their benefits (which are much higher sample rate than any camera could do) while preventing drift
+ - More # cameras in order to cover a sort of whole-room setup
+ - Support for IP and other camera inputs
+ - More advanced smoothing and motion prediction that allows levaraging the advantages and weaknesses of multiple types of cameras:  
   - the greater precision that higher resolution cameras will offer
   - more accurate motion offered by higher speed cameras
   - Taking latency into account for wireless or other higher-latency cameras -- a built-in tool to measure this latency
