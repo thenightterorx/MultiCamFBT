@@ -34,5 +34,5 @@ Indeterminant goals (mostly ML stuff, stuff I'm not sure is possible, or stuff t
  - ML-based motion prediction
  - Support for IP cameras fully standalone (no accompanying PC required) <-This could be moved up depending on the pace of the project
 
-steps for program
+steps for program \n
 first the program must do a little math to figure out where all of the cameras are relative to a master camera
