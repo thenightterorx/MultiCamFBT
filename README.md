@@ -4,17 +4,17 @@ An attempt at multi camera trackerless full body tracking for vrchat or other vr
 Here are the goals of the project, they are subject to change at any time. Read on to see an outline of how the program works.
 
 Current goals:
--Support for 3 cameras that can all see each other
--Trackerless support only
--Wired USB camera support only
--Support for certain cameras only ? (this is to be better defined during initial development)
--Minimal smoothing and motion prediction
--openxr on Linux support
--Mostly Python -proof-of-concept- implementation (should be fast enough, just not ideal)
+ - Support for 3 cameras that can all see each other
+ - Trackerless support only
+ - Wired USB camera support only
+ - Support for certain cameras only ? (this is to be better defined during initial development)
+ - Minimal smoothing and motion prediction
+ - openxr on Linux support
+ - Mostly Python -proof-of-concept- implementation (should be fast enough, just not ideal)
 
 Intermediate goals:
--Standalone support (with an independent PC to process camera feeds)
--C++ implementation (I do struggle with build systems so this will be quite a jump)
+ - Standalone support (with an independent PC to process camera feeds)
+ - C++ implementation (I do struggle with build systems so this will be quite a jump)
 
 Future goals:
  - steamVR support
@@ -29,9 +29,9 @@ Future goals:
     -  Taking latency into account for wireless or other higher-latency cameras -- a built-in tool to measure this latency
 
 Indeterminant goals (mostly ML stuff, stuff I'm not sure is possible, or stuff that massively exceeds my current skillset):
--Hand tracking
--Training a pose predictor that takes more data into account that is useful here -> perhaps looking at avatar to modify inputs to correspond more naturally between the person and their avatar
--ML-based motion prediction
--Support for IP cameras fully standalone (no accompanying PC required) <-This could be moved up depending on the pace of the project
+ - Hand tracking
+ - Training a pose predictor that takes more data into account that is useful here -> perhaps looking at avatar to modify inputs to correspond more naturally between the person and their avatar
+ - ML-based motion prediction
+ - Support for IP cameras fully standalone (no accompanying PC required) <-This could be moved up depending on the pace of the project
 
 
