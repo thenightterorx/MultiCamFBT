@@ -24,9 +24,9 @@ Future goals:
  - More # cameras in order to cover a sort of whole-room setup
  - Support for IP and other camera inputs
  - More advanced smoothing and motion prediction that allows levaraging the advantages and weaknesses of multiple types of cameras:  
-  - the greater precision that higher resolution cameras will offer
-  - more accurate motion offered by higher speed cameras
-  - Taking latency into account for wireless or other higher-latency cameras -- a built-in tool to measure this latency
+    -  the greater precision that higher resolution cameras will offer
+    -  more accurate motion offered by higher speed cameras
+    -  Taking latency into account for wireless or other higher-latency cameras -- a built-in tool to measure this latency
 
 Indeterminant goals (mostly ML stuff, stuff I'm not sure is possible, or stuff that massively exceeds my current skillset):
 -Hand tracking
