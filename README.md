@@ -1,18 +1,20 @@
 # MultiCamFBT
 An attempt at multi camera trackerless full body tracking for vrchat or other vr games
 
-Here are the goals of the project, they are subject to change at any time. Read on to see an outline of how the program may work.
+Here are the goals of the project, they are not in any particular order, and they are subject to change at any time. Read on to see an outline of how the program may work.
 
 Current goals:
- - Support for 3 cameras that can all see each other
+ - Support for 3 cameras that can all see each other (cameras identified visually with code tags)
  - Trackerless support only
  - Wired USB camera support only
  - Support for certain cameras only ? (this is to be better defined during initial development)
  - Minimal smoothing and motion prediction
  - openxr on Linux support (or OSC, this may be easier, I need to look into it)
  - Mostly Python -proof-of-concept- implementation (should be fast enough, just not ideal)
+ - Manual play area size configuration
 
 Intermediate goals:
+ - Automatic play area size configuration with labeled object of known length
  - Standalone support (with an independent PC to process camera feeds)
  - C++ implementation (I do struggle with build systems so this will be quite a jump)
 
@@ -34,5 +36,11 @@ Indeterminant goals (mostly ML stuff, stuff I'm not sure is possible, or stuff t
  - ML-based motion prediction
  - Support for IP cameras fully standalone (no accompanying PC required) <-This could be moved up depending on the pace of the project
 
-steps for program \n
+steps for program </p>
 first the program must do a little math to figure out where all of the cameras are relative to a master camera
+- get an image output from each camera
+- identify the tags of each of the other cameras within the view
+- To make this less ambiguous, there are cameras A, B, and C.
+- Camera A is the master camera.
+- Camera B gets the angle of camera A's tag
+- Camera B is given a temporary distance from camera A
